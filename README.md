@@ -3,7 +3,7 @@
 This app provides an easy to use interface for looking at baseball players, their associated statistics and viewing statistical leaders for batting average and slugging percentage across several different criteria.
 
 ## Setup the application
-This assumes that you already have postgres, ruby 2.5.0 (using RVM) and bundler installed.
+This assumes that you already have postgres, ruby 2.5.0 (using rbenv) and bundler installed.
 
 Install all the gems
 ```bash
