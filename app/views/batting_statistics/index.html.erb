@@ -6,7 +6,7 @@
 <br>
 <br>
 
-<%= form_tag '/leaderboard', method: :get do %>
+<%= form_tag '/', method: :get do %>
   <%= label_tag(:leader_type, "Leader Type")%>
   <% leader_types = [['Batting', 'batting_average'], ['Slugging', 'slugging_percentage']] %>
   <%= select_tag(:leader_type, options_for_select(leader_types, params[:leader_type]))%>

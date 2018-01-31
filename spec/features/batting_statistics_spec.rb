@@ -60,9 +60,9 @@ describe 'Batting Statistics', type: :feature do
 
   end
 
-  describe '/leaderboard' do
+  describe '/' do
     it 'default sorts by batting_average' do
-      visit '/leaderboard'
+      visit '/'
 
       header_row = first('tr')
       headers = "Team Player Year League Games At bats Runs Hits Double " +
@@ -78,7 +78,7 @@ describe 'Batting Statistics', type: :feature do
     end
 
     it 'allows filtering by league' do
-      visit '/leaderboard'
+      visit '/'
       select 'NL'
       click_button 'Refresh'
 
@@ -92,7 +92,7 @@ describe 'Batting Statistics', type: :feature do
     end
 
     it 'allows filtering by team' do
-      visit '/leaderboard'
+      visit '/'
       select 'BOS'
       click_button 'Refresh'
 
@@ -106,7 +106,7 @@ describe 'Batting Statistics', type: :feature do
     end
 
     it 'allows filtering by season' do
-      visit '/leaderboard'
+      visit '/'
       select '2016'
       click_button 'Refresh'
 
@@ -122,7 +122,7 @@ describe 'Batting Statistics', type: :feature do
     end
 
     it 'allows sorting by slugging percentage' do
-      visit '/leaderboard'
+      visit '/'
       select 'Slugging'
       click_button 'Refresh'
 
